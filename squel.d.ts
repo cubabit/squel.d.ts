@@ -106,7 +106,7 @@ interface Squel extends QueryBuilder {
   useFlavour(s: string): QueryBuilder
   VERSION: string
   registerValueHandler<T>(type: T, handler: Handler): Squel
-  fval(func: string, ...args: any[])
+  fval(func: string, ...args: any[]): any
 }
 
 declare module 'squel' {
