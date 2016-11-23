@@ -1,0 +1,18 @@
+{
+  "author": {
+    "email": "https://github.com/cubabit",
+    "name": "Peter van Holland"
+  },
+  "dependencies": {},
+  "description": "TypeScript definitions for squel",
+  "devDependencies": {},
+  "directories": {},
+  "license": "MIT",
+  "main": "",
+  "name": "@types/squel",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {},
+  "typings": "index.d.ts",
+  "version": "0.0.1"
+}
