@@ -27,7 +27,7 @@ interface SqlInsert {
   into(name: string): SqlInsert
   set(name: string, value: any, options?: {  autoQuoteFieldNames?: boolean, dontQuote?: boolean }): SqlInsert
   setFields(fields: Object, options?: { ignorePeriodsForFieldNameQuotes?: boolean }): SqlInsert
-  setFieldRows(fields: Object[], options?: { ignorePeriodsForFieldNameQuotes?: boolean }): SqlInsert
+  setFieldsRows(fields: Object[], options?: { ignorePeriodsForFieldNameQuotes?: boolean }): SqlInsert
   fromQuery(columns: string[], selectQry: SqlSelect): SqlInsert
   onDupUpdate(name: string, value: any, options? : { ignorePeriodsForFieldNameQuotes?: boolean, dontQuote?: boolean}): SqlInsert
   output(name: string|string[]): SqlInsert
@@ -60,7 +60,7 @@ interface  SqlUpdate {
 
 interface SqlDelete {
   trget(table: string): SqlDelete
-  from(table: string, alias: string): SqlDelete
+  from(table: string, alias?: string): SqlDelete
   join(name: string, alias?: string, condition?: string): SqlDelete
   left_join(name: string, alias?: string, condition?: string): SqlDelete
   right_join(name: string, alias?: string, condition?: string): SqlDelete
